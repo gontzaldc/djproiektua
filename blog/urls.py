@@ -5,5 +5,5 @@ from django.conf import settings
 
 urlpatterns = [
     url(r'^$', views.post_list),
-    url(r'^post/(?P<pk>[0-9]+)/$', views.post_pop, name='blog_post_pop'),
+    url(r'^posts/(?P<pk>[0-9]+)/$', views.post_pop, name='blog_post_pop'),
     ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
