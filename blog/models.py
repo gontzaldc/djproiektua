@@ -11,7 +11,7 @@ class Posta(models.Model):
     sortutako_data = models.DateTimeField(default=timezone.now())
     publikatutako_data = models.DateTimeField(blank=True, null=True)
     publikatuta=models.BooleanField(True)
-    image = models.FileField(upload_to='img')
+    image = models.FileField(upload_to='img', null=True, verbose_name="")
 
     def publish(self):
         self.published_date = timezone.now()
@@ -19,3 +19,10 @@ class Posta(models.Model):
 
     def __unicode__(self):
         return u'%s' % self.title
+
+'''class auth_user(models.Model):
+    username = models.ForeignKey('auth.user', on_delete=models.CASCADE,)
+    first_name = models.TextField()
+    last_name = models.TextField()
+    email = models.TextField()
+    password = models.TextField()'''

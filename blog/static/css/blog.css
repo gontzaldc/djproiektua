@@ -1,4 +1,15 @@
+#bonico
+{
+    background-color:white;
+    border-radius:10px;
+    border: 3px solid grey;
+    padding:2em;
+}
 
+#imgsize
+{
+    width:33%
+}
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -126,6 +137,7 @@ l, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto C
 #mainNav .navbar-brand {
   color: #fed136;
   font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Aria
+  }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 90%;
   font-weight: 400;
@@ -748,15 +760,3 @@ width: 50%!important;
   opacity: 1;
 }
 
-#bonico
-{
-    background-color:white;
-    border-radius:10px;
-    border: 3px solid grey;
-    padding:2em;
-}
-
-#imgsize
-{
-    width:33%
-}

@@ -1,8 +1,8 @@
 
 <!DOCTYPE html>
-{% load staticfiles %}
 <html lang="en">
 
+{% load staticfiles %}
 <head>
 
   <title>BattleBots Blog</title>
@@ -37,7 +37,7 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" onclick="openForm()" href="#a">Login</a>
             <div class="form-popup" id="myForm">
-            <form action="/action_page.php" class="form-container">
+            <form class="form-container">
               <h1>Login</h1>
 
               <label ><b>Email</b></label>
@@ -45,7 +45,7 @@
 
               <label ><b>Password</b></label>
               <input type="password" placeholder="Enter Password" name="psw" required>
-
+              <a href="{% url 'blog_post_new' %}">Register</a>
               <button type="submit" class="btn">Login</button>
               <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
